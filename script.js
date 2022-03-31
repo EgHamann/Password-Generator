@@ -1,11 +1,32 @@
+var passLength;
+var passLower;
+var passUpper;
+var passNum;
+var passSpec;
+
 function generatePassword(){
     //TODO: your code goes here
-        //TODO: prompt user for length
-            //TODO: react to invalid answer
-        //TODO: prompt user for lowercase
-        //TODO: prompt user for uppercase
-        //TODO: prompt user for numbers
-        //TODO: prompt user for special characters
+    //Gather user data
+        //prompt user for length
+        passLength = prompt("Please choose a length for your password, between 8 and 128 characters.");
+            //react to invalid answer
+            while (passLength < 8 || passLength > 128) {
+                passLength = prompt("That password length is not usable. Please choose a length for your password, between 8 and 128 characters.");
+            } 
+        console.log(passLength);
+        //prompt user for lowercase
+        passLower = confirm("Would you like your password to include lower case letters?")
+        console.log(passLower);
+        //prompt user for uppercase
+        passUpper = confirm("Would you like your password to include upper case letters?")
+        console.log(passUpper);
+        //prompt user for numbers
+        passNum = confirm("Would you like your password to include numbers?")
+        console.log(passNum);
+        //prompt user for special characters
+        passSpec = confirm("Would you like your password to include special characters?")
+        console.log(passSpec); 
+            
     //TODO: Make all necessary arrays
         //TODO: loop else if statement with valid array selections for password length
     return "password"
