@@ -4,6 +4,11 @@ var passUpper;
 var passNum;
 var passSpec;
 
+var lowArray = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,t, u, v, w, x, y, z];
+var uppArray = [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S,T, U, V, W, X, Y, Z];
+var numArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+var speArray = ["!", "#", "$", "%", "&", "(", ")", "*", "+", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "|", "}", "~"]
+
 function generatePassword(){
     //TODO: your code goes here
     //Gather user data
@@ -26,8 +31,9 @@ function generatePassword(){
         //prompt user for special characters
         passSpec = confirm("Would you like your password to include special characters?")
         console.log(passSpec); 
-            
-    //TODO: Make all necessary arrays
+
+        //TODO: Make all necessary arrays
+
         //TODO: loop else if statement with valid array selections for password length
     return "password"
   }
