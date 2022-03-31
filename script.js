@@ -1,5 +1,13 @@
 function generatePassword(){
     //TODO: your code goes here
+        //TODO: prompt user for length
+            //TODO: react to invalid answer
+        //TODO: prompt user for lowercase
+        //TODO: prompt user for uppercase
+        //TODO: prompt user for numbers
+        //TODO: prompt user for special characters
+    //TODO: Make all necessary arrays
+        //TODO: loop else if statement with valid array selections for password length
     return "password"
   }
   
